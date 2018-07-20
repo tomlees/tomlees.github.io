@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    background-color: #333;
+}
+
+#site {
+    background-color: #000;
+}
+
+#tomlees {
+    background-color: #666;
+}
+
+#olo {
+    background-color: saddlebrown;
+    width: 80px;
+}
+
+#fin {
+    background-color: darkslategrey;
+    width: 100px;
+}
+
+#press {
+    background-color: brown;
+    width: 140px;
+}
+
+hr {
+    margin: 0;
+    border-top: 1px solid #333;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+h1, h2, p, a, .swiper-pagination-fraction {
+    margin: 0;
+    font-weight: 400;
+    font-family: "BW Haas Head", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1em;
+    list-style-type: none;
+    text-decoration: none!important;
+    color: #999!important;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 0.9em;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p, a, .swiper-pagination {
+    font-size: 20px;
+}
+
+.block {
+    position: relative;
+    max-width: 100%;
+    height: 95vh;
+    overflow: hidden;
+}
+
+.title-block {
+    position: relative;
+    max-width: 100%;
+    height: 47.5vh;
+    overflow: hidden;
+}
+
+.color-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.swiper-container {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+figure {
+    margin: 0;
+    display: block;
+    position: relative;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+}
+
+figure img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -o-transform-origin: top left;
+    transform-origin: top left;
+}
+
+img {
+    width: 100%;
+}
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
