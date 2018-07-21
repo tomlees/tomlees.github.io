@@ -49,7 +49,7 @@ h1, h2, p, a, .swiper-pagination {
 
 h1 {
     font-size: 80px;
-    line-height: 0.9em;
+    line-height: 0.85em;
 }
 
 h2, .swiper-pagination {
@@ -57,27 +57,33 @@ h2, .swiper-pagination {
 }
 
 p {
-    font-size: 40px;
-    line-height: 1.1em;
-    padding-top: 0.275em;
-    padding-bottom: 0.275em;
+    font-size: 30px;
+    line-height: 1.15em;
+    padding-top: 0.2875em;
+    padding-bottom: 0.2875em;
 }
 
-.container {
+@media only screen and (max-width: 700px) {
+    p {
+        font-size: 20px;
+    }
+}
+
+.block {
     position: relative;
     max-width: 100%;
     height: 95vh;
     overflow: hidden;
 }
 
-.title-container {
+.title-block {
     position: relative;
     max-width: 100%;
     height: 300px;
     overflow: hidden;
 }
 
-.color-container {
+.color-block {
     position: absolute;
     top: 0;
     left: 0;
@@ -95,8 +101,8 @@ p {
     height: 100%;
 }
 
-.text-container {
-    max-width: 800px;
+.text-block {
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -105,7 +111,7 @@ p {
     height: inherit;
 }
 
-.image-container {
+.image-block {
     margin: 0;
     display: block;
     position: relative;
@@ -114,7 +120,7 @@ p {
     overflow: hidden;
 }
 
-.image-container img, .text-wrapper {
+.image-block img, .text-wrapper {
     position: relative;
     top: 50%;
     left: 50%;
