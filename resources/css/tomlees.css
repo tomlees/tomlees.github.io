@@ -7,7 +7,7 @@ body {
     background-color: #000;
 }
 
-#tomlees, #tomlees .inside-block, #contact {
+#tomlees, #contact {
     background-color: #666;
 }
 
@@ -71,7 +71,7 @@ p, ul {
 }
 
 @media only screen and (max-width: 700px) {
-    p {
+    p, ul {
         font-size: 20px;
     }
 }
@@ -116,6 +116,15 @@ ul {
     overflow: hidden;
 }
 
+.half-block {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+}
+
 .color-block {
     position: absolute;
     top: 0;
@@ -134,17 +143,8 @@ ul {
     height: 100%;
 }
 
-.half-block {
-    display: inline-block;
-    position: relative;
-    float: left;
-    width: 50%;
-    height: 100%;
-    z-index: 1;
-}
-
 .text-block {
-    max-width: 800px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     display: block;
