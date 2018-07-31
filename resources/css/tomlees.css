@@ -137,6 +137,7 @@ ul {
     position: relative;
     width: inherit;
     height: inherit;
+    background: #000;
 }
 
 .image-block {

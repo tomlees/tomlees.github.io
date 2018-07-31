@@ -164,6 +164,7 @@
   z-index: 10;
   cursor: pointer;
   outline: none;
+  cursor: w-resize;
 }
 .swiper-button-next {
   position: absolute;
@@ -174,6 +175,7 @@
   z-index: 10;
   cursor: pointer;
   outline: none;
+  cursor: e-resize;
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
