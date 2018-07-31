@@ -155,17 +155,25 @@
   -ms-touch-action: pan-x;
   touch-action: pan-x;
 }
-.swiper-button-prev,
-.swiper-button-next {
+.swiper-button-prev {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
   z-index: 10;
   cursor: pointer;
+  outline: none;
+}
+.swiper-button-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+  cursor: pointer;
+  outline: none;
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -173,7 +181,6 @@
   cursor: auto;
   pointer-events: none;
 }
-
 .swiper-button-prev.swiper-button-white,
 .swiper-container-rtl .swiper-button-next.swiper-button-white {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
