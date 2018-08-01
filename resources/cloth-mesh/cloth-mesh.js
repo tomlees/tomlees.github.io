@@ -12,9 +12,9 @@ let opts = {
   gravity: 300,
   friction: 0.99,
   bounce: 0.3,
-  pointsX: 20,
-  pointsY: 23,
-  renderCloth: false,
+  pointsX: 30,
+  pointsY: 33,
+  renderCloth: true,
   mouseInfluence: 20,
   pinCorners: true,
 };

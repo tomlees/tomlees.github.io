@@ -1,21 +1,26 @@
 body {
     margin: 0;
-    background-color: #333;
+    background-color: #1a1a1a;
     user-select: none;
 }
 
 canvas {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: 95vh;
-    margin-top: -12vh;
+    height: 110vh;
+    margin-top: -15vh;
 }
 
 #site {
+    background-color: #000;
+}
+
+#projects {
+    position: relative;
     background-color: #000;
 }
 
@@ -27,9 +32,13 @@ canvas {
     content: "Call";
 }
 
+#projects, .top-left, .top-right, .bottom-left, .bottom-right {
+    z-index: 1;
+}
+
 hr {
     margin: 0;
-    border-top: 1px solid #333;
+    border-top: 1px solid #1a1a1a;
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
@@ -41,7 +50,7 @@ hr {
     left: 0;
     width: 50%;
     height: 100%;
-    border-right: 1px solid #333;
+    border-right: 1px solid #1a1a1a;
 }
 
 .floating-wrapper img {
@@ -50,7 +59,7 @@ hr {
 
 .text-outline {
     -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: #000066;
+    -webkit-text-stroke-color: #1a1a1a;
     color: #000;
 }
 
@@ -64,7 +73,6 @@ h1, h2, h3, p, ul, .swiper-pagination {
     font-kerning: normal;
     -webkit-font-smoothing: antialiased;
     color: #999;
-    z-index: 100;
 }
 
 h1 {
@@ -81,7 +89,6 @@ h3 {
     font-size: 40vh;
     line-height: 0.85em;
     padding: 0px;
-    z-index: 1;
 }
 
 p, ul {
@@ -100,7 +107,6 @@ p, ul {
 a {
     text-decoration: none;
     color: inherit;
-    z-index: 1000;
 }
 
 ul {
@@ -135,7 +141,6 @@ ul {
     position: relative;
     width: inherit;
     height: inherit;
-    background: #000;
 }
 
 .half-block {
@@ -163,7 +168,6 @@ ul {
     position: relative;
     width: inherit;
     height: inherit;
-    z-index: 100;
 }
 
 .image-block img, .floating-wrapper, .text-wrapper, .list-wrapper {
