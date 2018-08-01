@@ -1,6 +1,17 @@
 body {
     margin: 0;
     background-color: #333;
+    user-select: none;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 95vh;
 }
 
 #site {
@@ -30,6 +41,10 @@ hr {
     width: 50%;
     height: 100%;
     border-right: 1px solid #333;
+}
+
+.floating-wrapper img {
+    border: 1px solid #333;
 }
 
 .text-outline {
@@ -62,9 +77,10 @@ h2, .swiper-pagination {
 }
 
 h3 {
-    font-size: 320px;
+    font-size: 40vh;
     line-height: 0.85em;
     padding: 0px;
+    z-index: 1;
 }
 
 p, ul {
@@ -83,6 +99,7 @@ p, ul {
 a {
     text-decoration: none;
     color: inherit;
+    z-index: 1000;
 }
 
 ul {
@@ -105,28 +122,8 @@ ul {
 .title-block {
     position: relative;
     max-width: 100%;
-    height: 300px;
+    height: 292px;
     overflow: hidden;
-}
-
-.half-block {
-    display: inline-block;
-    position: relative;
-    float: left;
-    width: 50%;
-    height: 100%;
-    z-index: 1;
-}
-
-.swiper-container {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .text-block {
@@ -140,15 +137,35 @@ ul {
     background: #000;
 }
 
-.image-block {
+.half-block {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.swiper-container, .full-block {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-block, .floating-block {
     margin: 0;
     display: block;
     position: relative;
     width: inherit;
     height: inherit;
+    z-index: 100;
 }
 
-.image-block img, .text-wrapper, .list-wrapper {
+.image-block img, .floating-wrapper, .text-wrapper, .list-wrapper {
     position: relative;
     top: 50%;
     left: 50%;
@@ -167,13 +184,15 @@ ul {
 }
 
 .image-block img {
-    max-width: 100%;
     max-height: 85%;
+}
+
+.floating-wrapper img {
+    max-width: 500px;
 }
 
 .list-wrapper {
     max-width: 50%;
-    max-height: 100%;
     overflow: scroll;
 }
 

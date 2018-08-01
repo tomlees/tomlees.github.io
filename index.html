@@ -13,6 +13,9 @@
     <link rel="icon" type="image/png" href="./resources/images/tomlees/favicon-96x96.png" sizes="96x96">
     <link rel="stylesheet" href="./resources/swiper/swiper.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/tomlees.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.3/pixi.min.js"></script>
+    <script src="http://codepen.io/shshaw/pen/epmrgO"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.1/dat.gui.min.js"></script>
 </head>
 <body>
     <div id="site">
@@ -21,35 +24,17 @@
             <h2 class="bottom-left"><a href="mailto:tom@tomlees.co" target="_blank">tom@tomlees.co</a></h2>
             <h2 class="bottom-right"><a href="tel:64225031992">+64 22 503 1992</a></h2>
             <!--
-            <div class="inside-block">
-                <h2 class="top-left"><a href="/">Tom Lees</a></h2>
-                <h2 class="bottom-left"><a href="mailto:tom@tomlees.co" target="_blank">tom@tomlees.co</a></h2>
-                <h2 class="bottom-right"><a href="tel:64225031992">+64 22 503 1992</a></h2>
-                <div class="inside-block">
-                    <h2 class="top-left"><a href="/">Tom Lees</a></h2>
-                    <h2 class="bottom-left"><a href="mailto:tom@tomlees.co" target="_blank">tom@tomlees.co</a></h2>
-                    <h2 class="bottom-right"><a href="tel:64225031992">+64 22 503 1992</a></h2>
-                    <div class="inside-block">
-                        <h2 class="top-left"><a href="/">Tom Lees</a></h2>
-                        <h2 class="bottom-left"><a href="mailto:tom@tomlees.co" target="_blank">tom@tomlees.co</a></h2>
-                        <h2 class="bottom-right"><a href="tel:64225031992">+64 22 503 1992</a></h2>
-                        <div class="inside-block">
-                            <h2 class="top-left"><a href="/">Tom Lees</a></h2>
-                            <h2 class="bottom-left"><a href="mailto:tom@tomlees.co" target="_blank">tom@tomlees.co</a></h2>
-                            <h2 class="bottom-right"><a href="tel:64225031992">+64 22 503 1992</a></h2>
-                            <div class="inside-block">
-                                <h2 class="top-left"><a href="/">Tom Lees</a></h2>
-                                <h2 class="bottom-left"><a href="mailto:tom@tomlees.co" target="_blank">tom@tomlees.co</a></h2>
-                                <h2 class="bottom-right"><a href="tel:64225031992">+64 22 503 1992</a></h2>
-                            </div>
-                        </div>
+            <div class="full-block">
+                <div class="floating-block" data-tilt data-tilt-max="140" data-tilt-speed="1000" data-tilt-perspective="1000" data-tilt-axis="x">
+                    <div class="floating-wrapper">
+                        <h3 class="text-center text-outline">Objects</h3>
                     </div>
                 </div>
             </div>
             -->
-            <div class="block">
+            <div class="full-block">
                 <div class="text-wrapper">
-                    <h3 class="text-outline">Design and Fabrication</h3>
+                    <h3 class="text-outline">Design<br>and<br>Fabrication</h3>
                 </div>
             </div>
         </div>
@@ -89,7 +74,7 @@
                         <div class="text-block">
                             <div class="text-wrapper">
                                 <p>OLO, as a portable table lamp, forms a lighting experience that encourages less energy consumption in the guise of soothing low light intensity.</p>
-                                <p>This soft lighting can be punctuated by moments of high brightness as required.
+                                <p>This soft lighting can be punctuated by moments of high brightness as required.</p>
                                 <p>Adjustable in two gestures, OLO pivots when twisted to gently increase brightness. When tilted past horizontal OLO’s top illuminates as a torch.</p>
                                 <p>OLO understands the importance of light quality, inside and out. Its aluminium body is both durable and timeless. OLO is an experience in lasting simplicity.</p>
                             </div>
@@ -266,8 +251,7 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="./resources/swiper/swiper.js"></script>
+    <script type="text/javascript" src="./resources/swiper/swiper.js"></script>
     <script>
         var mySwiper = new Swiper ('.swiper-container', {
             loop: true,
@@ -283,5 +267,7 @@
             },
         })
     </script>
+    <script type="text/javascript" src="./resources/vanilla-tilt/vanilla-tilt.js"></script>
+    <script type="text/javascript" src="./resources/cloth-mesh/cloth-mesh.js"></script>
 </body>
 </html>
