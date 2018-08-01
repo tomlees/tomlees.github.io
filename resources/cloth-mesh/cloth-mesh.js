@@ -9,21 +9,19 @@ let accuracy = 1;
 
 let opts = {
   image: 'https://78.media.tumblr.com/9e75c6b57b08db9213bc28d5c62990a7/tumblr_oz31c02onO1wzddldo1_540.jpg',
-  gravity: 200,
+  gravity: 300,
   friction: 0.99,
   bounce: 0.3,
   pointsX: 20,
   pointsY: 23,
   renderCloth: false,
-  mouseInfluence: 40,
+  mouseInfluence: 20,
   pinCorners: true,
 };
 
 let canvas = document.createElement('canvas');
 let ctx = canvas.getContext('2d');
 document.body.appendChild(canvas);
-
-ctx.strokeStyle = '#555';
 
 let mouse = {
 
@@ -318,7 +316,7 @@ function pointerDown(e){
 }
 
 function pointerUp(e){
-  mouse.down = false;
+  mouse.down = true;
   mouse.px = null;
   mouse.py = null;
   console.log('pointer up');
