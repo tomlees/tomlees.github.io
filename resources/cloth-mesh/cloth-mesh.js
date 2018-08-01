@@ -15,7 +15,7 @@ let opts = {
   pointsX: 20,
   pointsY: 23,
   renderCloth: false,
-  mouseInfluence: 30,
+  mouseInfluence: 40,
   pinCorners: true,
 };
 
@@ -318,7 +318,7 @@ function pointerDown(e){
 }
 
 function pointerUp(e){
-  mouse.down = true;
+  mouse.down = false;
   mouse.px = null;
   mouse.py = null;
   console.log('pointer up');
