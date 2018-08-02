@@ -8,14 +8,14 @@ let spacingY = 5;
 let accuracy = 1;
 
 let opts = {
-  image: 'https://78.media.tumblr.com/9e75c6b57b08db9213bc28d5c62990a7/tumblr_oz31c02onO1wzddldo1_540.jpg',
-  gravity: 300,
-  friction: 0.99,
+  image: 'https://78.media.tumblr.com/932338b9e42d9ca9a65d638a5918b68e/tumblr_pct5j2THyj1wzddldo1_1280.png',
+  gravity: 200,
+  friction: 0.98,
   bounce: 0.3,
-  pointsX: 30,
-  pointsY: 33,
-  renderCloth: true,
-  mouseInfluence: 20,
+  pointsX: 50,
+  pointsY: 50,
+  renderCloth: false,
+  mouseInfluence: 40,
   pinCorners: true,
 };
 
@@ -316,7 +316,7 @@ function pointerDown(e){
 }
 
 function pointerUp(e){
-  mouse.down = true;
+  mouse.down = false;
   mouse.px = null;
   mouse.py = null;
   console.log('pointer up');
