@@ -11,7 +11,7 @@ canvas {
     left: 0;
     right: 0;
     width: 100%;
-    min-height: 115vh;
+    min-height: 120vh;
     margin-top: -20vh;
     cursor: pointer;
 }
