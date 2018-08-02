@@ -8,7 +8,7 @@ let spacingY = 5;
 let accuracy = 1;
 
 let opts = {
-  image: 'https://78.media.tumblr.com/fc2a7b4bdcdeda1b8a64d87a67967d99/tumblr_pct6xzqJdr1wzddldo1_1280.png',
+  image: 'https://78.media.tumblr.com/932338b9e42d9ca9a65d638a5918b68e/tumblr_pct5j2THyj1wzddldo1_1280.png',
   gravity: 200,
   friction: 0.98,
   bounce: 0.3,
