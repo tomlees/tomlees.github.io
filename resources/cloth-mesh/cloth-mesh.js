@@ -8,11 +8,11 @@ let spacingY = 5;
 let accuracy = 1;
 
 let opts = {
-  image: 'https://78.media.tumblr.com/932338b9e42d9ca9a65d638a5918b68e/tumblr_pct5j2THyj1wzddldo1_1280.png',
+  image: 'https://78.media.tumblr.com/46c4f55fa1777eb724406c8ee9a5eab3/tumblr_pctexpPdtQ1wzddldo1_1280.png',
   gravity: 200,
-  friction: 0.98,
+  friction: 0.99,
   bounce: 0.3,
-  pointsX: 50,
+  pointsX: 70,
   pointsY: 50,
   renderCloth: false,
   mouseInfluence: 40,
