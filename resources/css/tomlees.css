@@ -85,18 +85,18 @@ h1 {
 }
 
 h2, .swiper-pagination {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1em;
 }
 
 h3 {
-    font-size: 40vh;
+    font-size: 20vh;
     line-height: 0.85em;
     padding: 0px;
 }
 
 p, li {
-    font-size: 30px;
+    font-size: 36px;
     line-height: 1.15em;
     padding-top: 0.575em;
     padding-bottom: 0.575em;
@@ -116,8 +116,8 @@ a {
 ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 7.5vh;
-    margin-bottom: 7.5vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 ::-webkit-scrollbar {
@@ -141,7 +141,7 @@ ul {
 .title-block {
     position: relative;
     max-width: 100%;
-    height: 292px;
+    height: 300px;
     overflow: hidden;
 }
 
@@ -201,7 +201,7 @@ ul {
 }
 
 .image-block img {
-    max-height: 85%;
+    max-height: 80%;
 }
 
 .floating-wrapper img {
