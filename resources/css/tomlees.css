@@ -71,7 +71,7 @@ h1, h2, h3, p, a, ul, .swiper-pagination {
     margin: 0;
     padding: 10px;
     font-weight: 400;
-    font-family: "BW Haas Head", Helvetica, Arial, sans-serif;
+    font-family: "BW Haas Head", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-rendering: optimizeLegibility;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
