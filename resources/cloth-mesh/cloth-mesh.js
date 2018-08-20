@@ -8,14 +8,14 @@ let spacingY = 5;
 let accuracy = 1;
 
 let opts = {
-  image: 'https://78.media.tumblr.com/54af460658c29fd34ab7f2ae5ff14306/tumblr_pcv20gmkS11wzddldo1_1280.png',
-  gravity: 200,
-  friction: 0.99,
-  bounce: 0.3,
-  pointsX: 70,
+  image: 'https://78.media.tumblr.com/37d596e82cdcb5a39b880ad3c20bf224/tumblr_pdqlob3sLB1wzddldo1_1280.png',
+  gravity: 500,
+  friction: 0.8,
+  bounce: 0.1,
+  pointsX: 100,
   pointsY: 50,
   renderCloth: false,
-  mouseInfluence: 40,
+  mouseInfluence: 100,
   pinCorners: true,
 };
 
