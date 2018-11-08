@@ -20,14 +20,6 @@ canvas {
     background-color: #000;
 }
 
-#email a:hover:before {
-    content: "Email";
-}
-
-#call a:hover:before {
-    content: "Call";
-}
-
 #projects {
     position: relative;
 }
@@ -67,11 +59,19 @@ hr {
     color: #000;
 }
 
+@font-face {
+    font-family: 'fl';
+    src: url('fl.woff2') format('woff2'),
+         url('fl.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1, h2, h3, p, a, ul, .swiper-pagination {
     margin: 0;
     padding: 10px;
     font-weight: 400;
-    font-family: "BW Haas Head", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'fl', "BW Haas Head", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-rendering: optimizeLegibility;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
@@ -80,12 +80,12 @@ h1, h2, h3, p, a, ul, .swiper-pagination {
 }
 
 h1 {
-    font-size: 80px;
-    line-height: 0.85em;
+    font-size: 36px;
+    line-height: 1.15em;
 }
 
 h2, .swiper-pagination {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1em;
 }
 
@@ -96,7 +96,7 @@ h3 {
 }
 
 p, li {
-    font-size: 32px;
+    font-size: 36px;
     line-height: 1.15em;
     padding-top: 0.575em;
     padding-bottom: 0.575em;
@@ -104,7 +104,7 @@ p, li {
 
 @media only screen and (max-width: 700px) {
     p, li {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -212,18 +212,17 @@ img {
     max-width: 100%;
 }
 
-.button, .text-center {
+.text-center {
     text-align: center;
 }
 
-.button a:hover span {
-    opacity: 0;
+.full-width {
+    width: 100%;
 }
 
-.button a:hover:before {
+.top {
     position: absolute;
-    left: 0;
-    right: 0;
+    top: 0;
 }
 
 .top-left {
@@ -236,6 +235,11 @@ img {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
 }
 
 .bottom-left {
