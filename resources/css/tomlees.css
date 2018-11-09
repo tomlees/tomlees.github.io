@@ -103,8 +103,8 @@ p, li {
 }
 
 @media only screen and (max-width: 700px) {
-    p, li {
-        font-size: 16px;
+    h1, p, li {
+        font-size: 28px;
     }
 }
 
@@ -218,6 +218,18 @@ img {
 
 .full-width {
     width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    #large-screen {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #small-screen {
+        display: none;
+    }
 }
 
 .top {
