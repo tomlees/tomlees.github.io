@@ -52,8 +52,9 @@ hr {
 }
 
 @font-face {
-    font-family: 'fl';
-    src: url('fl.woff2') format('woff2'),
+    font-family: 'FL';
+    src: url('fl.ttf') format('truetype'),
+         url('fl.woff2') format('woff2'),
          url('fl.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -62,8 +63,8 @@ hr {
 h1, h2, h3, p, a, ul, .swiper-pagination {
     margin: 0;
     padding: 10px;
-    font-weight: 400;
-    font-family: 'fl', "BW Haas Head", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-family: 'FL', 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
     text-rendering: optimizeLegibility;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
