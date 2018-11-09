@@ -329,4 +329,4 @@ document.body.addEventListener('mousemove',pointerMove);
 document.body.addEventListener('touchmove', pointerMove);
 
 document.body.addEventListener('touchend', pointerUp);
-document.body.addEventListener('mouseleave', pointerUp);
+document.body.addEventListener('mouseleave', pointerDown);
