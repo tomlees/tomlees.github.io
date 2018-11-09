@@ -17,9 +17,11 @@
 <body>
     <div id="site">
         <div class="block" id="tomlees">
-            <div class="full-block front">
-                <h1 class="text-center"><a href="./">Tom Lees</a></h1>
-            </div>
+            <a href="#selected-projects">
+                <div class="full-block front">
+                    <h1 class="text-center">Tom Lees</h1>
+                </div>
+            </a>
             <div class="full-block" id="">
                 <div class="text-wrapper">
                     <h1 class="text-center">Space/Object/Image</h1>
@@ -64,7 +66,7 @@
         -->
         </div>
         <hr>
-        <div class="title-block" id="">
+        <div class="title-block" id="selected-projects">
             <div class="full-block">
                 <div class="text-wrapper">
                     <h1 class="text-center">Selected Projects</h1>
@@ -229,7 +231,7 @@
             </div>
             <div class="half-block front">
                 <div class="text-wrapper">
-                    <h1 class="text-center"><a href="tel:64225031992">+64 22 503 1992</a></h1>
+                    <h1 class="text-center"><a href="tel:0225031992">+64 22 503 1992</a></h1>
                 </div>
             </div>
         </div>
@@ -241,7 +243,7 @@
         <hr>
         <div class="title-block" id="small-screen">
             <div class="text-wrapper">
-                <h1 class="text-center"><a href="tel:64225031992">+64 22 503 1992</a></h1>
+                <h1 class="text-center"><a href="tel:0225031992">+64 22 503 1992</a></h1>
             </div>
         </div>
     </div>
@@ -260,6 +262,18 @@
                 prevEl: '.swiper-button-prev',
             },
         })
+    </script>
+    <script type="text/javascript" src="./resources/js/jquery-3.3.1.min.js"></script>
+    <script>
+        $('a[href^="#"]').on('click', function(event) {
+            var target = $(this.getAttribute('href'));
+            if( target.length ) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        });
     </script>
     <script type="text/javascript" src="./resources/vanilla-tilt/vanilla-tilt.js"></script>
     <script type="text/javascript" src="./resources/cloth-mesh/pixi.js"></script>
