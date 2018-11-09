@@ -13,18 +13,14 @@ canvas {
     width: 100%;
     min-height: 120vh;
     margin-top: -20vh;
-    cursor: pointer;
+    cursor: grabbing;
 }
 
-#site, #projects {
-    background-color: #000;
-}
-
-#projects {
+#site, #projects, #contact {
     position: relative;
 }
 
-#projects, .front {
+#site, #projects, #contact, .front {
     z-index: 1;
 }
 
