@@ -316,7 +316,7 @@ function pointerDown(e){
 }
 
 function pointerUp(e){
-  mouse.down = false;
+  mouse.down = true;
   mouse.px = null;
   mouse.py = null;
   console.log('pointer up');
