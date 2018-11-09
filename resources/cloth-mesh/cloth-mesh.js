@@ -310,24 +310,23 @@ function pointerMove(e) {
 }
 
 function pointerDown(e){
-  mouse.down = true
-  mouse.button = 1
+  mouse.down = true;
+  mouse.button = 1;
   pointerMove(e);
 }
 
 function pointerUp(e){
-  mouse.down = true;
+  mouse.down = false;
   mouse.px = null;
   mouse.py = null;
   console.log('pointer up');
 }
 
-document.body.addEventListener('mousedown', pointerDown);
+document.body.addEventListener('mouseup', pointerDown);
 document.body.addEventListener('touchstart', pointerDown);
 
 document.body.addEventListener('mousemove',pointerMove);
 document.body.addEventListener('touchmove', pointerMove);
 
-document.body.addEventListener('mouseup', pointerUp);
 document.body.addEventListener('touchend', pointerUp);
 document.body.addEventListener('mouseleave', pointerUp);
