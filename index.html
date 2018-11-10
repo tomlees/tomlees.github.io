@@ -13,6 +13,8 @@
     <link rel="icon" type="image/png" href="./resources/images/tomlees/favicon-96x96.png" sizes="96x96">
     <link rel="stylesheet" href="./resources/swiper/swiper.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/tomlees.css">
+    <style type="text/css">body {display: none;}</style>
+    <noscript><style type="text/css">body {display: block;}</style></noscript>
 </head>
 <body>
     <div id="site">
@@ -264,6 +266,11 @@
         })
     </script>
     <script type="text/javascript" src="./resources/js/jquery-3.3.1.min.js"></script>
+    <script>
+        (function($) {
+            $(document.body).fadeIn(2000);
+        })(jQuery);
+    </script>
     <script>
         $('a[href^="#"]').on('click', function(event) {
             var target = $(this.getAttribute('href'));
