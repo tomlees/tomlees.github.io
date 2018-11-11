@@ -1,7 +1,17 @@
-body {
+html, body {
     margin: 0;
     background-color: #1a1a1a;
     user-select: none;
+}
+
+body {
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 canvas {

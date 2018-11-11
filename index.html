@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="./resources/css/tomlees.css">
 </head>
 <body>
+    <script>document.body.className += ' fade-out';</script>
     <div id="site">
         <div class="block" id="tomlees">
             <a href="#selected-projects">
@@ -264,6 +265,11 @@
         })
     </script>
     <script type="text/javascript" src="./resources/js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function() {
+            $('body').removeClass('fade-out');
+        });
+    </script>
     <script>
         $('a[href^="#"]').on('click', function(event) {
             var target = $(this.getAttribute('href'));
