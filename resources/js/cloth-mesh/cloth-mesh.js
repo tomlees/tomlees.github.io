@@ -1,5 +1,7 @@
 console.clear();
 
+var pointD = 1;
+
 let mesh;
 let cloth;
 
@@ -310,8 +312,11 @@ function pointerMove(e) {
 }
 
 function pointerDown(e){
-  mouse.down = true;
-  mouse.button = 1;
+  if(pointD = 1){
+      mouse.down = true;
+      mouse.button = 1;
+      pointD = 0;
+  }
   pointerMove(e);
 }
 
@@ -322,11 +327,15 @@ function pointerUp(e){
   console.log('pointer up');
 }
 
-document.body.addEventListener('mouseup', pointerDown);
+//function load(){}
+
+//document.body.addEventListener('mouseup', pointerDown);
 document.body.addEventListener('touchstart', pointerDown);
 
-document.body.addEventListener('mousemove',pointerMove);
-document.body.addEventListener('touchmove', pointerMove);
+document.body.addEventListener('mousemove',pointerDown);
+document.body.addEventListener('touchmove', pointerDown);
 
 document.body.addEventListener('touchend', pointerUp);
 document.body.addEventListener('mouseleave', pointerDown);
+
+//document.body.addEventListener('keypress', pointerDown);
