@@ -30,7 +30,6 @@
 html, body {
 	margin: 0;
 	background-color: #fff;
-	user-select: none;
 }
 
 body {
@@ -44,7 +43,7 @@ body.fade-out {
 }
 
 header {
-	margin-top: -4px;
+	margin-top: 0px;
 }
 
 canvas {
@@ -66,6 +65,10 @@ canvas {
 
 #fixed {
 	position: fixed;
+}
+
+#inline {
+	display: inline-block;
 }
 
 #site, #projects, #contact {
@@ -120,27 +123,23 @@ h1, h2, h3, p, a, ul, .swiper-pagination {
 	font-feature-settings: "kern" 1;
 	font-kerning: normal;
 	-webkit-font-smoothing: antialiased;
-	color: #222228;
+	color: #222822;
 }
 
 h1, p, li {
-	font-size: 30px;
-}
-
-h2, .swiper-pagination {
 	font-size: 15px;
 }
 
-h3 {
+h2 {
 	font-size: 60px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 675px) {
 	h1, p, li {
-		font-size: 22.5px;
+		font-size: 15px;
 	}
 
-	h3 {
+	h2 {
 		font-size: 45px;
 	}
 }
@@ -242,6 +241,10 @@ ul {
 	-ms-transform-origin: top left;
 	-o-transform-origin: top left;
 	transform-origin: top left;
+}
+
+.column {
+	max-width: 1350px;
 }
 
 .image-block img {
