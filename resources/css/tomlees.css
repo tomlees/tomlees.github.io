@@ -116,10 +116,10 @@ hr {
 h1, h2, h3, p, a, ul, .swiper-pagination {
 	margin: 0;
 	padding: 15px;
-	line-height: 1.2em;
-	letter-spacing: 0.2px;
+	line-height: 1.3em;
+	letter-spacing: 0px;
 	font-weight: 300;
-	font-family: Arial, 'FL', 'Helvetica Neue Light', Helvetica, sans-serif;
+	font-family: 'FL', 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
 	font-feature-settings: "kern" 1;
 	font-kerning: normal;
