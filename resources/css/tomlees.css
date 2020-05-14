@@ -116,9 +116,10 @@ hr {
 h1, h2, h3, p, a, ul, .swiper-pagination {
 	margin: 0;
 	padding: 15px;
-	line-height: 1em;
+	line-height: 1.2em;
+	letter-spacing: 0.2px;
 	font-weight: 300;
-	font-family: 'FL', 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
+	font-family: Arial, 'FL', 'Helvetica Neue Light', Helvetica, sans-serif;
 	text-rendering: optimizeLegibility;
 	font-feature-settings: "kern" 1;
 	font-kerning: normal;
@@ -131,7 +132,7 @@ h1, p, li {
 }
 
 h2 {
-	font-size: 60px;
+	font-size: 15px;
 }
 
 @media only screen and (max-width: 675px) {
@@ -140,7 +141,7 @@ h2 {
 	}
 
 	h2 {
-		font-size: 45px;
+		font-size: 15px;
 	}
 }
 
