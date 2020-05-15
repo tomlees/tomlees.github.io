@@ -46,6 +46,10 @@ header {
 	margin-top: -2px;
 }
 
+footer {
+	margin-bottom: -2px;
+}
+
 canvas {
 	display: none;
 	position: fixed;
